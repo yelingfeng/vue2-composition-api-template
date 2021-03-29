@@ -1,0 +1,23 @@
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.3s;
+}
+
+.fade-enter,
+.fade-leave-active {
+  opacity: 0;
+}
+
+// fade-transform
+.fade-transform-leave-active,
+.fade-transform-enter-active {
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1), border 0s, background 0s, color 0s, font-size 0s;
+}
+
+.fade-transform-enter {
+  opacity: 0;
+}
+
+.fade-transform-leave-to {
+  opacity: 0;
+}

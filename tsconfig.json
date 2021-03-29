@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "target": "esnext", // 编译的目标是什么版本的
+    "module": "esnext",
+    "strict": true, // 启用所有严格的类型检查选项。
+    "jsx": "preserve",
+    "allowJs": true, // 允许编译javascript文件。
+    "importHelpers": true,
+    "noImplicitAny": false,
+    "moduleResolution": "node", // 编译的目标是什么版本的
+    "experimentalDecorators": true,
+    "esModuleInterop": true,
+    "strictFunctionTypes": false,
+    "strictPropertyInitialization": false,
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": true,
+    "baseUrl": ".",
+    "types": ["node", "webpack-env"],
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    "lib": ["esnext", "dom", "dom.iterable", "scripthost"]
+  },
+  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue", "tests/**/*.ts", "tests/**/*.tsx"],
+  "exclude": ["./node_modules", "./docs", "./public", "src/views/csa/industry/components/ripple/symbolClz.ts"]
+}

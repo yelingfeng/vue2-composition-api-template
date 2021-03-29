@@ -1,0 +1,143 @@
+body,
+div,
+span,
+header,
+footer,
+nav,
+section,
+aside,
+article,
+ul,
+dl,
+dt,
+dd,
+li,
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+i,
+b,
+textarea,
+button,
+input,
+select,
+figure,
+figcaption {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-style: normal;
+  // font-family: 'Microsoft Yahei', HelveticaNeue, Helvetica, Arial, sans-serif;
+  text-decoration: none;
+  border: none;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-font-smoothing: antialiased;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+:root {
+  --main-color: #43b3b4;
+  --main-hover: #1091a9;
+}
+
+/*滚动条样式*/
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  background-color: rgba(#2747be, 0);
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(0, 98, 255, 0);
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  height: 4px;
+  background-color: #ccc5c5;
+}
+
+// 鼠标选中背景样式
+// ::selection {
+//   background: #fff;
+// }
+
+// ::-moz-selection {
+//   background: #fff;
+// }
+
+// ::selection {
+//   background: #fff;
+// }
+
+// ::-moz-selection {
+//   background: #fff;
+// }
+
+// 新加字体
+@font-face {
+  font-family: NumFont;
+  src: url('../assets/fonts/DINPro-Bold.ttf');
+}
+
+@font-face {
+  font-family: Trend;
+  src: url('../assets/fonts/trend.ttf');
+}
+
+input:-webkit-autofill {
+  box-shadow: 0 0 0px 1000px #fff inset !important;
+}
+
+.btnGroup {
+  position: absolute;
+  top: 50%;
+  right: 0px;
+  transform: translateY(-50%);
+  width: 13%;
+  display: inline-block;
+}
+
+// .btnGroup1 {
+//   width: 17%;
+// }
+
+.selectButtons {
+  position: absolute;
+  bottom: 8px;
+}
+
+/*全局无数据样式*/
+.noData {
+  text-align: center;
+  height: 150px;
+  line-height: 150px;
+  color: #909399;
+  /*background: url('~@/assets/images/online/noData.png') no-repeat center;
+  background-size: auto;
+  background-position: 55% 50%;*/
+}
+
+.showTip {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-break: break-all;
+}
+.gradient-text {
+  background-image: linear-gradient(0deg, #49aaff, #85f3f9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
