@@ -61,7 +61,6 @@
     "mockjs": "^1.1.0",
     "prettier": "^1.19.1",
     "typescript": "~3.7.5",
-    "vite-plugin-vue2": "^1.4.2",
     "vue-class-component": "^7.2.6",
     "vue-property-decorator": "^9.1.2",
     "vue-template-compiler": "^2.6.11",
